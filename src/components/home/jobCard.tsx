@@ -10,7 +10,7 @@ interface JobCardProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export function JobCard({}: JobCardProps) {
   return (
-    <div className="flex items-center border border-gray-400 rounded-md p-4 mt-2">
+    <div className="flex items-center border border-gray-400 rounded-md p-4 mt-1.5">
       <div className="basis-1/6">
         <SiNotion size={32} />
       </div>
