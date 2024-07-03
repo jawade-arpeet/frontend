@@ -34,10 +34,16 @@ export function Login() {
   return (
     <>
       <h1 className="text-4xl font-semibold text-center mt-20">Login</h1>
-      <form className="mt-2 space-y-1 max-w-sm mx-auto">
+      <p className="text-sm text-gray-600 text-center mt-1">
+        Your Career Journey Continues Here.
+      </p>
+      <form className="flex flex-col gap-y-1.5 mt-2.5 max-w-sm mx-auto">
         <Input placeholder={"Email"} type="email" name="email" />
         <Input placeholder={"Password"} type="password" name="password" />
-        <Button type="submit" className="w-full mt-1.5">
+        <a href="/" className="text-xs font-medium block text-right my-1">
+          Forgot Password?
+        </a>
+        <Button type="submit" className="w-full">
           Login
         </Button>
       </form>
@@ -47,9 +53,14 @@ export function Login() {
 
 export function SignUp() {
   return (
-    <>
-      <h1 className="text-4xl font-semibold text-center mt-20">Sign Up</h1>
-      <form className="mt-3 space-y-1 max-w-sm mx-auto">
+    <div className="max-w-sm mx-auto">
+      <h1 className="text-4xl font-semibold text-center mt-20 tracking-tight">
+        Create an account
+      </h1>
+      <p className="text-sm text-gray-600 text-center mt-1">
+        Discover Your Next Opportunity with Scout.
+      </p>
+      <form className="mt-3 space-y-1 ">
         <Input placeholder={"First Name"} type="text" name="firstName" />
         <Input placeholder={"Last Name"} type="text" name="lastName" />
         <Input placeholder={"Email"} type="email" name="email" />
@@ -58,6 +69,11 @@ export function SignUp() {
           Sign Up
         </Button>
       </form>
-    </>
+      <p className="text-xs font-light text-center mt-2 w-5/6 mx-auto text-gray-600">
+        By clicking continue, you agree to our{" "}
+        <span className="underline">Terms of Service</span> and{" "}
+        <span className="underline">Privacy Policy.</span>
+      </p>
+    </div>
   );
 }
